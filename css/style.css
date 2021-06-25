@@ -1,0 +1,282 @@
+@charset "utf-8";
+
+/* Top header */
+header {
+    border-top: 3px solid #353966 ;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+header .top-header {
+    display: flex;
+    justify-content: space-between;
+}
+header .top-header .top-header-box {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    color: #eee;
+}
+header .top-header .top-header-box .top-header-box-sub {
+    width: 120px;
+    height: 35px;
+    border-radius: 3px;
+    padding-top: .4rem;
+    margin-right: 10px;
+}
+header .top-header .top-header-box .top-header-box-sub:nth-child(1) {
+    background: #315ac7;
+}
+header .top-header .top-header-box .top-header-box-sub:nth-child(2) {
+    background: #a89f6f
+}
+header .top-header .top-header-box .top-header-box-sub a {}
+header .top-header .login {
+    display: flex;
+    align-items: center;
+    color: #8f8888;
+}
+header .top-header .login {
+    margin-top: 10px;
+    transform: translate(50%);
+    position: relative;
+}
+header .top-header .login .login-sub {
+    padding: 0.5rem;
+}
+header .top-header .login .login-sub:before {
+    content: '';
+    position: absolute;
+    top: 13px;
+    width: 1px;
+    height: 14px;
+    background: #8f8888;
+}
+header .top-header .login .login-sub:nth-child(1):before {
+    display: none;
+}
+header .top-header .login .login-sub:nth-child(2):before {
+    left: 65px;
+}
+header .top-header .login .login-sub:nth-child(3):before {
+    left: 215px;
+}
+header .top-header .login .search-icon {
+    margin-left: 50px;
+}
+
+/* low header */
+header .low-header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+header .low-header .nav {
+    color: #333;
+    font-weight: 600;
+    font-size: 20px;
+}
+header .low-header .nav .nav-sub {
+    margin-left: 40px;
+    cursor: pointer;
+}
+header .low-header .nav .nav-sub:nth-child(1) {
+    margin-left: 0;
+}
+header .low-header .nav .nav-sub .nav-sub-box {
+    display: none;
+}
+header .low-header .menu-box span {
+    display: inline-block;
+    width: 30px;
+    height: 25px;
+    background: url(../img/ico_set.png) no-repeat -409px -27px;
+    cursor: pointer;
+}
+header .low-header .menu-box small {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.big-banner-img {
+    width: 1920px;
+    height: 640px;
+    /* z-index: -1; */
+    cursor: pointer;
+}
+.big-banner-img img {
+    width: 100%;
+    height: 100%;
+}
+
+/* jQery */
+.slick-prev,
+.slick-next {
+    position: absolute;
+    top: 85%;
+    z-index: 100;
+    width: 20px;
+    height: 25px;
+    font-size: 0;
+    border: none;
+    cursor: pointer;
+}
+.slick-next
+{
+    right: 23%;
+    background: url(../img/main_banner_arrow06.png) no-repeat -20px;
+}
+.slick-prev {
+    left: 70%;
+    background: url(../img/main_banner_arrow06.png) no-repeat;
+}
+.slick-dots {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    top: -98px;
+}
+.slick-dots li.slick-active button {
+    left: 1390px;
+    visibility: visible;
+    color: #333;
+}
+.slick-dots li:nth-child(2).slick-active button {
+    left: 1367px;
+}
+.slick-dots li:nth-child(3).slick-active button {
+    left: 1343px;
+}
+.slick-dots li:nth-child(4).slick-active button {
+    left: 1320px;
+}
+.slick-dots li:nth-child(5).slick-active button {
+    left: 1297px;
+}
+
+.slick-dots li button {
+    color: #333;
+    font-size: 24px;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+    top: 2px;
+    left: 1380px;
+    background: none;
+    visibility: hidden;
+}
+
+/* play bar  */
+.big-banner-img .play-bar {
+    position: relative;
+}
+.play-bar .play,
+.play-bar .stop {
+    position: absolute;
+    top: 550px;
+    width: 16px;
+    height: 14px;
+    cursor: pointer;
+}
+.play-bar span.stop {
+    background: url(../img/slide_btn_stop02.png) no-repeat 4px -23px;
+    left: 1500px;
+}
+.play-bar span.play {
+    background: url(../img/slide_btn_stop02.png) no-repeat 4px 0;
+    left: 1550px;
+}
+.page-number {
+    display: inline-block;
+    position: relative;
+    top: -100px;
+    left: 1405px;
+    font-size: 24px;
+    color: #333;
+}
+.service {
+
+}
+.service .inner {
+    border: 1px solid #000;
+}
+.service .inner .service-box .service-img span,
+.service .inner .service-box-second .service-img .second-line {
+    width: 110px;
+    height: 82px;
+    display: inline-block;
+    padding: 1rem;
+}
+
+/* first service */
+.service .inner .service-box .service-img span:nth-child(1) {
+    background: url(../img/ico_main_insurance.png) no-repeat 0 0;
+}
+.service .inner .service-box .service-img span:nth-child(2) {
+    background: url(../img/ico_main_insurance.png) no-repeat -114px 0;
+}
+.service .inner .service-box .service-img span:nth-child(3) {
+    background: url(../img/ico_main_insurance.png) no-repeat -233px 0;
+}
+.service .inner .service-box .service-img span:nth-child(4) {
+    background: url(../img/ico_main_insurance.png) no-repeat -351px 0;
+}
+.service .inner .service-box .service-img span:nth-child(5) {
+    background: url(../img/ico_main_insurance.png) no-repeat -468px 0;
+}
+.service .inner .service-box .service-img span:nth-child(6) {
+    background: url(../img/ico_main_insurance.png) no-repeat -582px 0;
+}
+
+/* second service */
+.service .inner .service-box-second .service-img .second-line:nth-child(1) {
+    background: url(../img/ico_main_insurance.png) no-repeat 0 -86px;
+}
+.service .inner .service-box-second .service-img .second-line:nth-child(2) {
+    background: url(../img/ico_main_insurance.png) no-repeat -114px -86px;
+}
+.service .inner .service-box-second .service-img .second-line:nth-child(3) {
+    background: url(../img/ico_main_insurance.png) no-repeat -233px -86px;
+}
+.service .inner .service-box-second .service-img .second-line:nth-child(4) {
+    background: url(../img/ico_main_insurance.png) no-repeat -351px -86px;
+}
+.service .inner .service-box-second .service-img .second-line:nth-child(5) {
+    background: url(../img/ico_main_insurance.png) no-repeat -468px -86px;
+}
+.service .inner .service-box-second .service-img .second-line:nth-child(6) {
+    background: url(../img/ico_main_insurance.png) no-repeat -582px -86px;
+}
+
+.another-prev,
+.another-next
+{
+    position: absolute;
+    /* left: 0; */
+    top: 50%;
+    z-index: 100;
+    /* font-size: 0; */
+    border: none;
+    background: rgba(0,0,0,.8);
+    cursor: pointer;
+    display: inline-block;
+    width: 20px;
+    height: 28px;
+}
+.another-prev {
+    left: 0;
+    background: url(../img/slide_arrow05.png) no-repeat 0 0;
+}
+.another-next {
+    right: 0;
+    background: url(../img/slide_arrow05.png) no-repeat 100% 0;
+}
+.service-banner .slick-dots,
+.service-banner .slick-dots li button {
+    /* display: none; */
+}
+
+
